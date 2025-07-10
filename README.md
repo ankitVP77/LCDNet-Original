@@ -4,6 +4,10 @@ Official PyTorch implementation of LCDNet.
 
 [![](imgs/video-preview.png)](https://www.youtube.com/watch?v=nAvTdEFRh_s)
 
+## Custom Instructions for SlideSLAM
+Run docker container (Ankit special) using:
+```docker run --gpus all -it --rm -v /home/mrsl/data/KITTI_slideslam_bench/lcdnet_bench_data:/data/KITTI lcdnet```
+
 ## Installation
 
 You can install LCDNet locally on your machine, or use the provided Dockerfile to run it in a container. The `environment_lcdnet.yml` file is meant to be used with docker, as it contains version of packages that are specific to a CUDA version. We don't recommend using it for local installation.
