@@ -50,6 +50,7 @@ We also noticed that spconv version 2.2 or higher is not compatible with the pre
 Download the [SemanticKITTI](http://semantic-kitti.org/dataset.html#download) dataset and generate the loop ground truths:
 
 ```python -m data_process.generate_loop_GT_KITTI --root_folder KITTI_ROOT```
+
 ```python -m data_process.generate_loop_GT_KITTI --root_folder ../data/KITTI```
 
 where KITTI_ROOT is the path where you downloaded and extracted the SemanticKITTI dataset.
