@@ -50,6 +50,7 @@ We also noticed that spconv version 2.2 or higher is not compatible with the pre
 Download the [SemanticKITTI](http://semantic-kitti.org/dataset.html#download) dataset and generate the loop ground truths:
 
 ```python -m data_process.generate_loop_GT_KITTI --root_folder KITTI_ROOT```
+```python -m data_process.generate_loop_GT_KITTI --root_folder ../data/KITTI```
 
 where KITTI_ROOT is the path where you downloaded and extracted the SemanticKITTI dataset.
 
@@ -109,6 +110,8 @@ Similarly, on the KITTI-360 dataset:
 To evaluate the loop closure performance of the trained model on the KITTI and KITTI-360 dataset:
 
 ```python -m evaluation.inference_yaw_general --root_folder KITTI_ROOT --dataset kitti --validation_sequence 08 --weights_path WEIGHTS --ransac --without_ground```
+
+```python -m evaluation.inference_yaw_general --root_folder ../data/KITTI --dataset kitti --validation_sequence 05 --weights_path ../pretreined_models/LCDNet-kitti360.tar --ransac```
 
 ```python -m evaluation.inference_yaw_general --root_folder KITTI360_ROOT --dataset kitti360 --validation_sequence 2013_05_28_drive_0002_sync --weights_path WEIGHTS --ransac --without_ground```
 
